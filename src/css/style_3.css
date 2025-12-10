@@ -116,3 +116,76 @@ h3 {
     color: white;
     box-shadow: 0 0 8px rgba(255, 150, 30, 0.6);
 }
+
+/* PROJECT CARDS */
+.project-card {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 20px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 18px;
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; 
+}
+
+/* Hover Animation */
+.project-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Title */
+.project-card h3 {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+/* Optional hover effect on title */
+.project-card:hover h3 {
+    color: #ffe57f;
+}
+
+/* CONTENT ANIMATION */
+.project-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 
+        max-height 0.5s ease,
+        opacity 0.5s ease,
+        transform 0.5s ease;
+}
+
+/* WHEN ACTIVE */
+.project-card.active .project-content {
+    max-height: 300px; /* enough space for paragraphs */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Paragraph animations */
+.project-content p {
+    margin: 8px 0;
+    font-size: 18px;
+    animation: fadeSlide 0.4s ease forwards;
+    opacity: 0;
+}
+
+/* Fade + slide animation for each item */
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
