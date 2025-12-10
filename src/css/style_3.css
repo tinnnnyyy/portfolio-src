@@ -32,6 +32,12 @@ h3 {
   color: #ff7b00;
 }
 
+h6 {
+  font-weight: normal;
+  margin-top: 0;
+  color: #adadad;
+}
+
 .about {
   margin-top: 40px;
   font-size: 1.1em;
@@ -269,5 +275,47 @@ h3 {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(255, 123, 0, 0.3);
+}
+
+.btn {
+  background: #ff7b00;
+  color: #000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff7b00;
+  transform: scale(1.05);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
