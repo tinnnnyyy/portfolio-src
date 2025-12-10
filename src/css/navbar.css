@@ -1,0 +1,45 @@
+/* ----- NAVBAR CONTAINER ----- */
+.navbar {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+/* ----- NAV LIST ----- */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- NAV LINKS ----- */
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+/* ----- HOVER EFFECT ----- */
+.navbar a:hover {
+    color: #ff7b00;
+    border-bottom: 3px solid #ff7b00;
+}
+
+/* ----- ACTIVE PAGE ----- */
+.navbar a.active {
+    color: #ff7b00;
+    border-bottom: 3px solid #ff7b00;
+}

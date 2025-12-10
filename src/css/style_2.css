@@ -1,0 +1,173 @@
+/* Body & Container */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../../resources/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f2f2f2;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 0 0 25px 25px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 15px;
+    color: #ff9100;
+    transition: 0.3s ease;
+    background: #ffffff88;
+}
+
+.navbar ul li a:hover {
+    background: #ffd7a6;
+    color: #a85c00;
+}
+
+.navbar ul li a.active {
+    background: #ffb86b;
+    color: white;
+    box-shadow: 0 0 8px rgba(255, 150, 30, 0.6);
+}
+
+/* Profile Photo */
+.profile-photo {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+    border: 5px solid #ff7b00;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Info Section */
+.info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    line-height: 1.8;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.text-content h1 {
+    text-align: center;
+    color: #ff7b00;
+    margin-bottom: 10px;
+}
+
+.text-content h4 {
+    color: #f2f2f2;
+}
+
+.container h2 {
+    color: #ff7b00;
+}
+
+/* Likes / Dislikes Boxes */
+.likes-dislikes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.likes, .dislikes {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 15px;
+    width: 45%;
+    color: #fff;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.likes:hover, .dislikes:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(255, 150, 30, 0.5);
+}
+
+/* Likes / Dislikes List */
+.likes ul, .dislikes ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.likes li, .dislikes li {
+    margin: 5px 0;
+}
+
+/* Hobbies Table - Clean & Playful Style */
+.hobbies-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 25px; /* spacing between hobby cards */
+    margin-top: 25px;
+}
+
+.hobbies-table td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    border-radius: 25px; /* soft rounded corners */
+    background: linear-gradient(145deg, rgba(255, 180, 100, 0.15), rgba(255, 140, 0, 0.1));
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3); /* soft warm glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.hobbies-table td:hover {
+    transform: scale(1.08); /* playful zoom */
+    box-shadow: 0 0 25px rgba(255, 150, 30, 0.6); /* warmer glow on hover */
+}
+
+.hobbies-table img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobbies-table img.hovered {
+    transform: scale(1.12); /* bigger hover effect */
+    box-shadow: 0 0 30px rgba(255, 140, 0, 0.7); /* bright orange glow */
+}
+
+.hobbies-table p {
+    color: #fff1e0; /* soft cream text */
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}

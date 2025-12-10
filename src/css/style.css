@@ -1,0 +1,208 @@
+body { 
+  margin: 0; 
+  padding: 0; 
+  font-family: Arial, sans-serif; 
+  background: url('../../resources/background.jpg') no-repeat center center fixed; 
+  background-size: cover; 
+  color: #f2f2f2; 
+} 
+
+/* Align info and profile pic with spacing */ 
+.profile-info { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  gap: 10px; 
+  margin-bottom: 40px; 
+  flex-direction: row-reverse; 
+} 
+
+.profile-photo { 
+  border-radius: 50%; /* Circular shape */ 
+  width: 250px; /* Fixed width */ 
+  height: 250px; /* Make height equal width for perfect circle */ 
+  object-fit: cover; /* Ensures resources covers the container */ 
+  margin-top: 20px; /* Space from top */ 
+  padding: 5px; /* Optional inner spacing */ 
+  border: 5px solid #ff7b00; /* White border for a clean look */ 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Soft shadow for depth */ 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */ 
+} 
+
+.profile-photo:hover { 
+  transform: scale(1.05); /* Slight zoom on hover */ 
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3); /* More pronounced shadow on hover */ 
+} 
+
+.personal-data { 
+  padding: 25px 30px; /* ← Adds nice indentation */ 
+  width: fit-content; /* Makes box fit your content */ 
+  text-align: left; /* Ensures text aligns properly */ 
+  line-height: 1.6; /* Makes spacing cleaner */ 
+} 
+
+.personal-data p { 
+  margin: 5px 0; /* Removes uneven spacing between lines */ 
+} 
+
+.section-title { 
+  padding-left: 0px;  
+  margin-bottom: 10px; 
+} 
+
+/* Design the rest of the content */ 
+.container { 
+  max-width: 950px; 
+  margin: auto; 
+  padding: 40px 20px; 
+} 
+
+h1 { 
+  color: #ff7b00; 
+  margin-bottom: 5px; 
+} 
+
+h2 { 
+  font-weight: normal; 
+  margin-top: 0; 
+  color: #ccc; 
+} 
+
+h3 { 
+  font-weight: normal; 
+  margin-top: 0; 
+  color: #ff7b00; 
+} 
+
+.info { 
+  flex: 1; 
+  margin-top: 20px; 
+  line-height: 1.8; 
+  text-align: left; 
+} 
+
+.about { 
+  margin-top: 40px; 
+  font-size: 1.1em; 
+} 
+
+.skills { 
+  margin-top: 30px; 
+} 
+
+.skill { 
+  margin-bottom: 20px; 
+} 
+
+.skill-name { 
+  margin-bottom: 5px; 
+} 
+
+.progress { 
+  background: #555; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  height: 15px; 
+} 
+
+/* Add format for the progress bars*/ 
+.progress-bar { 
+  height: 100%; 
+  text-align: right; 
+  padding-right: 5px; 
+  line-height: 15px; 
+  color: white; 
+} 
+
+.bar1 { 
+  width: 80%; 
+  background: #ff7b00; 
+} 
+
+.bar2 { 
+  width: 40%; 
+  background: #ff7b00; 
+} 
+
+.bar3 { 
+  width: 60%; 
+  background: #ff7b00; 
+} 
+
+.navbar { 
+  width: 100%; 
+  padding: 12px 0; 
+  display: flex; 
+  justify-content: center; 
+  margin-bottom: 30px; 
+  border-radius: 0 0 25px 25px; 
+} 
+
+.navbar ul { 
+  display: flex; 
+  list-style: none; 
+  gap: 35px; 
+} 
+
+.navbar ul li a { 
+  text-decoration: none; 
+  font-size: 18px; 
+  font-weight: 600; 
+  padding: 8px 15px; 
+  border-radius: 15px; 
+  color: #ff9100; 
+  transition: 0.3s ease; 
+  background: #ffffff88; 
+} 
+
+.navbar ul li a:hover { 
+  background: #ffd7a6; 
+  color: #a85c00; 
+} 
+
+.navbar ul li a.active { 
+  background: #ffb86b; 
+  color: white; 
+  box-shadow: 0 0 8px rgba(255, 150, 30, 0.6); 
+} 
+
+/* EDUCATION TABLE STYLE - Double Border Cute Boxes */ 
+.education-table { 
+  width: 100%; 
+  border-collapse: separate; 
+  border-spacing: 20px; /* adds space between boxes */ 
+  margin-top: 25px; 
+} 
+
+.education-table td { 
+  padding: 25px; 
+  text-align: center; 
+  vertical-align: top; 
+  border: 4px double #ec8e00; /* SAME STYLE AS PERSONAL DATA */ 
+  border-radius: 20px; /* soft round edges */ 
+  box-shadow: 0 0 10px rgba(255, 170, 22, 0.3); 
+  transition: 0.3s ease; 
+} 
+
+/* Hover effect */ 
+.education-table td:hover { 
+  transform: scale(1.03); 
+  box-shadow: 0 0 15px rgba(255, 170, 22, 0.5); 
+} 
+
+/* resourcess */ 
+.education-table img { 
+  width: 260px; 
+  border-radius: 12px; 
+  margin-bottom: 12px; 
+  transition: 0.3s ease; 
+} 
+
+.education-table td:hover img { 
+  transform: scale(1.05); 
+} 
+
+/* Text */ 
+.education-table p { 
+  color: #ff9100
+}
