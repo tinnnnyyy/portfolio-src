@@ -1,6 +1,6 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 100px; 
+  padding: 50px; 
   font-family: Arial, sans-serif;
   background: url('../../resources/background.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -16,6 +16,7 @@ body {
 }
 
 h1 {
+  font-weight: normal;
   color: #ff7b00;
   margin-bottom: 5px;
 }

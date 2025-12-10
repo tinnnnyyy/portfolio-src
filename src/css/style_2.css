@@ -1,7 +1,7 @@
 /* Body & Container */
 body {
-    margin: 0;
-    padding: 0;
+    margin: 100px; 
+    padding: 50px; 
     font-family: Arial, sans-serif;
     background: url('../../resources/background.jpg') no-repeat center center fixed;
     background-size: cover;
